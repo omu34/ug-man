@@ -147,9 +147,8 @@ export default function Home() {
           <h3 className="font-semibold uppercase text-gray-800">
             Our Locations
           </h3>
-          <p className="text-gray-600 text-sm">
-            123 Anywhere St. <br /> Any City, State, Any Country <br /> (123)
-            456 7890
+          <p className="text-gray-600 text-sm"> Nairobi, Kenya <br /><a href="tel:+254791862878">+254 791 862878
+            456 7890</a>
           </p>
         </div>
         <div>
@@ -210,9 +209,8 @@ export default function Home() {
           </div>
           <div>
             <h3 className="font-semibold mb-2">Main Office</h3>
-            <p className="text-sm text-white">
-              Nairobi <br /> Nairobi City <br /> Kenya <br />
-              +254 791 862878
+            <p className="text-sm text-white">Nairobi City <br /> Kenya <br />
+              <a href="tel:+254791862878">+254 791 862878</a>
             </p>
             <p className="text-sm mt-2" >
             <a href="mailto:davidiamond.green@gmail.com">davidiamond.green@gmail.com</a></p>
