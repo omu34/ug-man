@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <div className="mt-8">
           <a
-            href="mailto:sales@sales.com"
+            href="mailto:davidiamond.green@gmail.com"
             className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
           >
             Email us
@@ -211,10 +211,11 @@ export default function Home() {
           <div>
             <h3 className="font-semibold mb-2">Main Office</h3>
             <p className="text-sm text-white">
-              123 Anywhere St. <br /> Any City, State <br /> Any Country <br />
-              (123) 456 7890
+              Nairobi <br /> Nairobi City <br /> Kenya <br />
+              +254 791 862878
             </p>
-            <p className="text-sm mt-2">hello@reallygreatsite.com</p>
+            <p className="text-sm mt-2" >
+            <a href="mailto:davidiamond.green@gmail.com">davidiamond.green@gmail.com</a></p>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Social Media</h3>
