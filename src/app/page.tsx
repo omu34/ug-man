@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <div className="mt-8">
           <a
-            href="#shop"
+            href="mailto:sales@sales.com"
             className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
           >
             Email us
