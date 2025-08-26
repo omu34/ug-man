@@ -130,7 +130,7 @@ export default function Home() {
             href="#shop"
             className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
           >
-            Shop All
+            Email us
           </a>
         </div>
       </section>
