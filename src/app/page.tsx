@@ -198,24 +198,19 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-8">
-          {/* <a
-            href="#shop"
-            className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
-          >
-            Shop All
-          </a> */}
+          
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-transparent py-12 text-gray-800">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <footer className=" py-16  text-white">
+        <div className="max-w-6xl rounded-xl bg-gray-800 text-2xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-semibold mb-4">Connect with us</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Main Office</h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-white">
               123 Anywhere St. <br /> Any City, State <br /> Any Country <br />
               (123) 456 7890
             </p>
@@ -223,7 +218,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="font-semibold mb-2">Social Media</h3>
-            <ul className="space-y-1 text-sm text-gray-600">
+            <ul className="space-y-1 text-sm text-white">
               <li>
                 <a href="#" className="hover:underline">
                   Facebook
