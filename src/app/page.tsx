@@ -2,102 +2,247 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="font-sans bg-gradient-to-br from-teal-200 via-blue-100 to-pink-200 text-gray-900">
+      {/* Header with Logo */}
+      <header className="w-full py-6 flex justify-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/vioo-logo.jpg" 
+          alt="Company Logo"
+          width={120}
+          height={60}
+          className="object-contain rounded-full"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      {/* Hero */}
+      <section className="max-w-6xl mx-auto px-6 bg-[url('/ug4.jpg')] bg-cover bg-center bg-no-repeat py-16 flex flex-col md:flex-row items-center justify-between">
+        <div className="text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
+            THE AMD <span className="text-red-600">LIKE THE SERVICE</span>
+          </h1>
+          <div className="flex justify-center md:justify-start space-x-4">
+            <a
+              href="tel:+254791862878"
+              className="px-6 py-3 mt-4 bg-white rounded-lg text-blue-400 transition duration-300 hover:bg-gray-200"
+            >
+              Call us
+            </a>
+            
+          </div>
+        </div>
+        <div className="mt-10 md:mt-0">
+          <Image
+            src="/ug6.jpg"
+            alt="Headset"
+            width={50}
+            height={50}
+            className="mx-auto rounded-lg"
+          />
+        </div>
+      </section>
+
+      {/* Technology */}
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">All-new technology</h2>
+          <p className="text-gray-700">
+            News write-ups offer a great way to let clients know about new
+            products and services, events, awards, and more. News write-ups
+            offer a great way to let clients know about new products and
+            services, events, awards, and more.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/ugbg.jpg"
+            alt="Technology"
+            width={800}
+            height={100}
+            className="rounded-xl shadow"
+          />
+        </div>
+      </section>
+      {/* Support */}
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <Image
+            src="/ug8.jpg"
+            alt="Support"
+            width={500}
+            height={300}
+            className="rounded-xl shadow"
+          />
+        </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Expert Support</h2>
+          <p className="text-gray-700 mb-6">
+            Aluminium, Glass Fabrication Installation & Fixing
+            we can assist you. <br />
+            Call us 
+          </p>
+          <h3 className="font-semibold uppercase text-gray-800">
+            Our Locations
+          </h3>
+          <p className="text-gray-600 text-sm">
+            Nairobi City <br /> Nairobi <br /> +254 791 862878
+          </p>
+        </div>
+        
+      </section>
+
+      {/* Shop by Category */}
+      <section id="shop" className="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h2 className="text-2xl font-semibold mb-10">We at work</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Phones */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug2.jpg" alt="Phones" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">PHONES & ACCESSORIES</h3>
+              <p className="text-sm text-gray-600">
+                High class, high quality phones at affordable prices
+              </p>
+            </div>
+          </div>
+          {/* Computers */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug10.jpg" alt="Computers" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">COMPUTER EQUIPMENT</h3>
+              <p className="text-sm text-gray-600">
+                All your desktop or laptop needs made available
+              </p>
+            </div>
+          </div>
+          {/* Misc */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug5.jpg" alt="Misc" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">MISCELLANEOUS ITEMS</h3>
+              <p className="text-sm text-gray-600">
+                We’ve got more stuff to meet your techie needs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#shop"
+            className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Shop All
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </section>
+
+      {/* Support */}
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Expert Support</h2>
+          <p className="text-gray-700 mb-6">
+            Faulty phone battery? Slow laptop? We have in-house tech experts who
+            can assist you. <br />
+            Visit us in stores!
+          </p>
+          <h3 className="font-semibold uppercase text-gray-800">
+            Our Locations
+          </h3>
+          <p className="text-gray-600 text-sm">
+            123 Anywhere St. <br /> Any City, State, Any Country <br /> (123)
+            456 7890
+          </p>
+        </div>
+        <div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/ug8.jpg"
+            alt="Support"
+            width={500}
+            height={300}
+            className="rounded-xl shadow"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        </div>
+      </section>
+
+      <section id="shop" className="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h2 className="text-2xl font-semibold mb-10">Videos & Articles of what we do</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Phones */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug2.jpg" alt="Phones" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">PHONES & ACCESSORIES</h3>
+              <p className="text-sm text-gray-600">
+                High class, high quality phones at affordable prices
+              </p>
+            </div>
+          </div>
+          {/* Computers */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug6.jpg" alt="Computers" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">COMPUTER EQUIPMENT</h3>
+              <p className="text-sm text-gray-600">
+                All your desktop or laptop needs made available
+              </p>
+            </div>
+          </div>
+          {/* Misc */}
+          <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+            <Image src="/ug5.jpg" alt="Misc" width={400} height={300} />
+            <div className="p-4">
+              <h3 className="font-semibold">MISCELLANEOUS ITEMS</h3>
+              <p className="text-sm text-gray-600">
+                We’ve got more stuff to meet your techie needs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8">
+          {/* <a
+            href="#shop"
+            className="px-6 py-3 bg-gray-200 text-black font-medium rounded-full hover:bg-gray-300"
+          >
+            Shop All
+          </a> */}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-transparent py-12 text-gray-800">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="font-semibold mb-4">Connect with us</h3>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Main Office</h3>
+            <p className="text-sm text-gray-600">
+              123 Anywhere St. <br /> Any City, State <br /> Any Country <br />
+              (123) 456 7890
+            </p>
+            <p className="text-sm mt-2">hello@reallygreatsite.com</p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Social Media</h3>
+            <ul className="space-y-1 text-sm text-gray-600">
+              <li>
+                <a href="#" className="hover:underline">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
