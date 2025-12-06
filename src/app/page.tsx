@@ -15,7 +15,7 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 bg-[url('/ug4.jpg')] bg-cover bg-center bg-no-repeat py-16 flex flex-col md:flex-row items-center justify-between">
+      <section className="max-w-10xl mx-auto px-6 bg-[url('/ug4.jpg')] bg-cover bg-center bg-no-repeat py-16 flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
             THE AMD <span className="text-red-600">LIKE THE SERVICE</span>
@@ -42,7 +42,7 @@ export default function Home() {
       </section>
 
       {/* Technology */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <section className="max-w-10xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-2xl font-semibold mb-4">All-new technology</h2>
           <p className="text-gray-700">
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
       {/* Support */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <section className="max-w-10xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <Image
             src="/ug8.jpg"
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Shop by Category */}
-      <section id="shop" className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <section id="shop" className="max-w-10xl mx-auto px-6 py-16 text-center">
         <h2 className="text-2xl font-semibold mb-10">We at work</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Phones */}
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="shop" className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <section id="shop" className="max-w-10xl mx-auto px-6 py-16 text-center">
         <h2 className="text-2xl font-semibold mb-10">Videos & Articles of what we do</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Phones */}
@@ -203,7 +203,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className=" py-16  text-white">
-        <div className="max-w-6xl rounded-xl bg-gray-800 text-2xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+        <div className="max-w-10xl rounded-xl bg-gray-800 text-2xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-semibold mb-4">Connect with us</h3>
           </div>
